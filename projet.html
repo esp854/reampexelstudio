@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets Professionnels | Portfolio</title>
+  <link rel="stylesheet" href="projet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mon<span>Portfolio</span></div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projects.html" class="active">Projets</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section Projets -->
+  <main>
+    <section id="projects" class="projects">
+      <h1 class="section-title" data-aos="fade-down" data-aos-duration="1000">Mes Projets Professionnels</h1>
+
+      <!-- Filtres de Projet -->
+      <div class="project-filters" data-aos="fade-up" data-aos-duration="1000">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Conception Web</button>
+        <button class="filter-btn" data-filter="graphic">Design Graphique</button>
+        <button class="filter-btn" data-filter="digital">Portraits Numériques</button>
+        <button class="filter-btn" data-filter="sketch">Portraits au Crayon</button>
+        <button class="filter-btn" data-filter="video">Montage Vidéo</button>
+      </div>
+
+      <!-- Grille des projets -->
+      <div class="project-grid">
+        <!-- Conception Web -->
+        <div class="project-card web" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="project-image" style="background-image: url('site.png');"></div>
+          <div class="project-info">
+            <h3>Site Web - Portfolio</h3>
+            <p>Création d'un portfolio interactif et moderne.</p>
+            <button class="view-more">Voir plus</button>
+          </div>
+        </div>
+
+        <!-- Design Graphique -->
+        <div class="project-card graphic" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="project-image" style="background-image: url('tableau.jpg');"></div>
+          <div class="project-info">
+            <h3>Tableaux de peinture</h3>
+            <p>Des tableaux uniques que vous ne trouverez nulle part ailleurs.</p>
+            <button class="view-more">Voir plus</button>
+          </div>
+        </div>
+
+        <!-- Portrait Numérique -->
+        <div class="project-card digital" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="project-image" style="background-image: url('portrait.jpg');"></div>
+          <div class="project-info">
+            <h3>Portrait Numérique</h3>
+            <p>Portrait numérique détaillé d'un personnage.</p>
+            <button class="view-more">Voir plus</button>
+          </div>
+        </div>
+
+        <!-- Portrait au Crayon -->
+        <div class="project-card sketch" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="project-image" style="background-image: url('crayon.jpg');"></div>
+          <div class="project-info">
+            <h3>Portrait au Crayon</h3>
+            <p>Esquisse au crayon d'un portrait réaliste.</p>
+            <button class="view-more">Voir plus</button>
+          </div>
+        </div>
+
+        <!-- Montage Vidéo -->
+        <div class="project-card video" data-aos="zoom-in" data-aos-duration="1200">
+          <div class="project-image" style="background-image: url('montage.jpg');"></div>
+          <div class="project-info">
+            <h3>Montage Vidéo</h3>
+            <p>Montage vidéo créatif et dynamique pour un court-métrage.</p>
+            <button class="view-more">Voir plus</button>
+          </div>
+          <!-- Vidéo Embedding -->
+          <div class="project-video">
+            <video width="100%" controls>
+              <source src="video.mp4" type="video/mp4">
+              Votre navigateur ne prend pas en charge la balise vidéo.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compétences Button -->
+      <div class="skills-btn-container" data-aos="fade-up" data-aos-duration="1000">
+        <a href="skills.html" class="btn skills-btn">Voir mes compétences</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 - Portfolio | Développé avec ❤️ par Esperant</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

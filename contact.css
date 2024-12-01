@@ -1,0 +1,145 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f7;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Section des réseaux sociaux */
+  .social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7f6;
+  }
+  
+  .social-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+  }
+  
+  /* Style des icônes */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  
+  .social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 5rem;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icon.linkedin {
+    background-color: #0077B5;
+  }
+  
+  .social-icon.github {
+    background-color: #333;
+  }
+  
+  .social-icon.instagram {
+    background-color: #E4405F;
+  }
+  
+  .social-icon.twitter {
+    background-color: #1DA1F2;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .social-icons {
+      gap: 3rem;
+    }
+  
+    .social-icon {
+      font-size: 4rem;
+      width: 120px;
+      height: 120px;
+    }
+  
+    .social-section h2 {
+      font-size: 2rem;
+    }
+  }
+ /* Header */
+ header {
+    background-color: var(--header-background);
+    padding: 1rem 2rem;
+    color: var(--text-color-light);
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: var(--text-color-light);
+    font-size: 1rem;
+  }
+  
+  .nav-links li a.active {
+    font-weight: 600;
+    color: var(--primary-color);
+  }  
+  /* Style pour l'icône Gmail */
+.social-icon.gmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DB4437; /* Couleur de fond Gmail */
+    color: #fff;
+    border-radius: 50%;
+    font-size: 5rem; /* Taille de l'icône */
+    width: 150px; /* Taille de l'icône */
+    height: 150px; /* Taille de l'icône */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .social-icon.gmail:hover {
+    transform: scale(1.2); /* Effet de survol pour agrandir l'icône */
+    background-color: #C1351D; /* Couleur rouge plus foncée au survol */
+  }
+  
+  .social-icon.gmail i {
+    font-size: 3rem; /* Taille de l'icône à l'intérieur */
+  }
+  
+  /* Option responsive pour les petits écrans */
+  @media screen and (max-width: 768px) {
+    .social-icon.gmail {
+      font-size: 4rem;
+      width: 120px;
+      height: 120px;
+    }
+  }
+  

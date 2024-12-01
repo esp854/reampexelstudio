@@ -1,0 +1,170 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.photo {
+  flex: 1;
+  max-width: 400px;  /* Adjust this value to make the photo larger */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-photo {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text {
+  flex: 2;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.intro-text h1, .intro-text h2 {
+  animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+  font-size: 3rem;  /* Increase size */
+}
+
+#typewriter-h1 {
+  font-size: 4rem;  /* Bigger size */
+}
+
+#typewriter-h2 {
+  font-size: 2.5rem;  /* Adjust size */
+  margin-top: 10px;
+}
+
+#typewriter-h1 span, #typewriter-h2 span {
+  color: #ff4747;
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ff4747;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #f0a500;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ff4747;
+}
+
+/* Animation Typing */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    margin-left: 0;
+  }
+
+  .profile-photo {
+    max-width: 250px;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+}nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+header {
+  background-color: #161b22;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+
+}
